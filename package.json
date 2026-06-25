@@ -1,0 +1,24 @@
+{
+  "name": "xhs-public-search-crawler",
+  "version": "0.1.0",
+  "description": "MVP crawler for low-frequency public Xiaohongshu search result collection into Supabase.",
+  "main": "crawl.js",
+  "type": "commonjs",
+  "scripts": {
+    "login": "node login.js",
+    "crawl": "node crawl.js",
+    "analyze": "node analyze.js",
+    "check": "node --check login.js && node --check crawl.js && node --check analyze.js"
+  },
+  "keywords": [
+    "playwright",
+    "supabase",
+    "xiaohongshu"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.47.2"
+  }
+}
